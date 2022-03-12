@@ -3,15 +3,19 @@ package innow.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "campaigns")
 public class Campaign {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String url;
-    @Column(name = "country_group")
+    @Column(name = "countrys_group")
+    @Enumerated(value = EnumType.STRING)
     private CountrysGroup countrysGroup;
+    @Enumerated(value = EnumType.STRING)
     private Language language;
     @Column(name = "age_group")
+    @Enumerated(value = EnumType.STRING)
     private AgeGroup ageGroup;
     private String location;
 

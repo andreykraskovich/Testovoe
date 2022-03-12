@@ -6,6 +6,6 @@ public enum CountrysGroup {
     EUROPE,
     EAST,
     AMERICA,
-    LATIN,
+    LATINA,
     OCEANIC
 }

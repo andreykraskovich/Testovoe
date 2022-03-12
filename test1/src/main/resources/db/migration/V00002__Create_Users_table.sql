@@ -1,6 +1,6 @@
 create table users(
- id  VARCHAR(50) not null,
- password VARCHAR(50) not null,
- login VARCHAR(50) not null primary key,
- authority VARCHAR(50) not null
+ id  VARCHAR(50),
+ password VARCHAR(50),
+ login VARCHAR(50),
+ authority VARCHAR(50)
  );

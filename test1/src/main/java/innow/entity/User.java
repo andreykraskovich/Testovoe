@@ -10,6 +10,8 @@ public class User {
     private Long id;
     private String password;
     private String login;
+    @Column(name = "authority")
+    @Enumerated(value = EnumType.STRING)
     private Role authority;
 
     public User(){}

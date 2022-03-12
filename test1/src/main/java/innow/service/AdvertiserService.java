@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface AdvertiserService {
     Page<Advertiser> list(int value, String column);
+    Advertiser add(Advertiser advertiser);
 }
